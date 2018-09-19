@@ -27,7 +27,7 @@ class App extends Component {
         const {list} = this.state
         return(
             <div className="container">
-                <h1 className="center">Do Shit App</h1>
+                <h1 className="center">Do Things App</h1>
                 <AddItem add={this.addItem}/>
                 <List data={list}/>
             </div>
