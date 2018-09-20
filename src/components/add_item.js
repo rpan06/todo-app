@@ -10,6 +10,10 @@ class AddItem extends React.Component {
         e.preventDefault();
         console.log('new item', this.state);
         this.props.add(this.state); //Passed to from App, using function to give it back
+        this.setState({
+            title: '',
+            details: '',
+        })
     }
 
     render(){
