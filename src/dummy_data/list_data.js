@@ -1,7 +1,7 @@
 export default [
     {
         title: 'Go to store',
-        details: 'Get eggs, milk, and stuff',
+        details: 'Get eggs, milk, tissues, and stuff',
         _id: '001'
     },
     {
@@ -15,7 +15,7 @@ export default [
         _id: '003'
     },
     {
-        title: 'Cry a lot',
+        title: 'wait for death',
         details: 'Cry a lot',
         _id: '004'
     },
