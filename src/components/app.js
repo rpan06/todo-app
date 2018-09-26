@@ -4,8 +4,10 @@ import axios from 'axios';
 import AddItem from './add_item';
 import List from './list';
 import dummyListData from '../dummy_data/list_data';
+import ItemDetails from './item_details'
 
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
+import NotFound from './not_found'
 
 import config from '../config'
 
@@ -89,8 +91,12 @@ class App extends Component {
                     <AddItem {...props} add={this.addItem}/>
                 )}/> */}
                 {/* <AddItem add={this.addItem}/> */}
-                <Route exact path="/" component={List}/>
-                <Route path="/add-item" component={AddItem}/>
+                <Switch>
+                    <Route exact path="/" component={List}/>
+                    <Route path="/add-item" component={AddItem}/>
+                    <Route path="/item/:itemId" component={ItemDetails}/>
+                    <Route component={NotFound}/>
+                </Switch>
 
             </div>
         )

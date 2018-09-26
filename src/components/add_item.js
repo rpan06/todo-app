@@ -26,7 +26,7 @@ class AddItem extends React.Component {
         const {title, details} = this.state;
         return(
            <div>
-               <h1 className="center">Add To Do Item</h1>
+               <h1 className="center">Add THINGIES</h1>
                <NavBtn to="/" text="Back To List" color="blue darken-2"/>
                 <form onSubmit={this.handleAddItem}>
                     <div className="row">
