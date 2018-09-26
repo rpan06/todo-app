@@ -32,9 +32,6 @@ export default class ItemDetails extends React.Component {
 
     render(){
         const {item} = this.state;
-console.log('item:', item) //display all information, convert timestamp, delete button. when delete button, route back homepage
-//axios.put same as axios.get, completes the item. gives you a new timestamp for completed. indicate that item is completed on homepage
-//add two more buttons, delete and complete button
         if(!item){
             return <h1 className="center">LOADING...</h1>;
         }
@@ -56,3 +53,7 @@ console.log('item:', item) //display all information, convert timestamp, delete 
         )
     }
 }
+
+//display all information, convert timestamp, delete button. when delete button, route back homepage
+//axios.put same as axios.get, completes the item. gives you a new timestamp for completed. indicate that item is completed on homepage
+//add two more buttons, delete and complete button
