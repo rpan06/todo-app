@@ -77,8 +77,6 @@ class App extends Component {
     //     this.setState({
     //         list: listCopy
     //     })
-
-
     // }
     render(){
         // const {list, error} = this.state
